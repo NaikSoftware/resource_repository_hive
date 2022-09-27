@@ -3,6 +3,7 @@
  * 2020-2021 NaikSoftware
  */
 
+import 'dart:async';
 import 'dart:convert';
 import 'dart:developer';
 
@@ -157,10 +158,10 @@ class CacheEntryAdapter extends TypeAdapter<BoxCacheEntry> {
   }
 }
 
-String _jsonEncode<V>(V value) {
+String _jsonEncode<V>(V value, TypeSendPort _) {
   return json.encode(value);
 }
 
-dynamic _jsonDecode(String data) {
+dynamic _jsonDecode(String data, TypeSendPort _) {
   return json.decode(data);
 }

@@ -1,6 +1,6 @@
 name: resource_repository_hive
 description: Hive storage for the resource_repository package.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/NaikSoftware/resource_repository_hive
 
 environment:
@@ -10,12 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  hive: ^2.2.1
+  hive: ^2.2.3
   hive_flutter: ^1.1.0
   resource_repository_storage: ^0.0.2+1
-  rxdart: ^0.27.4
-  synchronized: ^3.0.0+2
-  worker_manager: ^4.2.6
+  rxdart: ^0.27.5
+  synchronized: ^3.0.0+3
+  worker_manager: ^4.4.6
 
 dev_dependencies:
   flutter_test:
